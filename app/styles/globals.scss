@@ -1,9 +1,32 @@
+// tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+// remove default size
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+// colors
+:root {
+  --bg: #03170d;
+  --bgLight: #051629;
+  --text: #fafefd;
+  --textHard: #e0e0e0;
+  --primary: #4fe3e8;
+  --accent: #1d77dd;
+}
+
+// body
+body {
+  background-color: var(--bg);
+  color: var(--text);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
