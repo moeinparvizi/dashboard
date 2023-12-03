@@ -77,7 +77,11 @@ const menuItem = [
 const Sidebar = () => {
   return (
     <div>
-      <h1>this is side bar</h1>
+      <ul>
+        {menuItem.map(item => (
+          <li key={item.title}>{item.title}</li>
+        ))}
+      </ul>
     </div>
   );
 }
