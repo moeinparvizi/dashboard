@@ -1,3 +1,16 @@
+// import icons
+import {
+  MdDashboard,
+  MdSupervisedUserCircle,
+  MdShoppingBag,
+  MdAttackMoney,
+  MdWork,
+  MdAnalytics,
+  MdPeople,
+  MdOutlineSettings,
+  MdHelpCenter,
+} from 'react-icons/md'
+
 const menuItem = [
   {
     title: 'pages',
@@ -10,7 +23,7 @@ const menuItem = [
       {
         title: 'users',
         path: '/dashboard/users',
-        icon: <MdSuperVisedUserCircle />
+        icon: <MdSupervisedUserCircle />
       },
       {
         title: 'products',
@@ -21,34 +34,44 @@ const menuItem = [
         title: 'transactions',
         path: '/dashboard/transactions',
         icon: <MdAttackMoney />
-      },
-    ],
+      }
+    ]
   },
   {
     title: 'analytics',
     list: [
       {
-        title: 'dashboard',
-        path: '/dashboard',
-        icon: <MdDashboard />
+        title: 'revenue',
+        path: '/dashboard/revenue',
+        icon: <MdWork />
       },
       {
-        title: 'users',
-        path: '/dashboard/users',
-        icon: <MdSuperVisedUserCircle />
+        title: 'reports',
+        path: '/dashboard/reports',
+        icon: <MdAnalytics />
       },
       {
-        title: 'products',
-        path: '/dashboard/products',
-        icon: <MdShoppingBag />
-      },
-      {
-        title: 'transactions',
-        path: '/dashboard/transactions',
-        icon: <MdAttackMoney />
-      },
-    ],
+        title: 'teams',
+        path: '/dashboard/teams',
+        icon: <MdPeople />
+      }
+    ]
   },
+  {
+    title: 'user',
+    list: [
+      {
+        title: 'settings',
+        path: '/dashboard/settings',
+        icon: <MdOutlineSettings />
+      },
+      {
+        title: 'help',
+        path: '/dashboard/help',
+        icon: <MdHelpCenter />
+      }
+    ]
+  }
 ]
 
 const Sidebar = () => {
