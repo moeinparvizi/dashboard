@@ -6,23 +6,23 @@
 // import fonts
 @font-face {
   font-family: poping-regular;
-  src: url('./fonts/Poppins-Regular.woff2');
+  src: url("./fonts/Poppins-Regular.woff2");
 }
 @font-face {
   font-family: poping-light;
-  src: url('./fonts/Poppins-Light.ttf');
+  src: url("./fonts/Poppins-Light.ttf");
 }
 @font-face {
   font-family: poping-semi;
-  src: url('./fonts/Poppins-SemiBold.ttf');
+  src: url("./fonts/Poppins-SemiBold.ttf");
 }
 @font-face {
   font-family: poping-medium;
-  src: url('./fonts/Poppins-Medium.ttf');
+  src: url("./fonts/Poppins-Medium.ttf");
 }
 
 // remove default size
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,7 +32,7 @@
 :root {
   --bg: #0c0614;
   --bgLight: #431784;
-  --bgDark: #1C0B35;
+  --bgDark: #1c0b35;
   --text: #fafefd;
   --textHard: #e0e0e0;
   --primary: #b391e6;
@@ -54,7 +54,7 @@ body {
     list-style-type: none;
   }
 
-  h1{
+  h1 {
     font-family: poping-semi;
   }
 
@@ -63,11 +63,11 @@ body {
     display: flex;
     align-items: center;
 
-    input{
-      &:focus{
+    input {
+      &:focus {
         outline: none;
       }
-      &::placeholder{
+      &::placeholder {
         font-size: 13px;
       }
     }
@@ -76,10 +76,19 @@ body {
   .sidebar-container {
     height: calc(100vh - 40px);
   }
-  .username,.pathname,.cat-title {
+  .username,
+  .pathname,
+  .cat-title,
+  .number {
     font-family: poping-semi;
   }
   .sub-username {
     font-family: poping-light;
+  }
+  .percent-positive {
+    color: lime;
+  }
+  .percent-negative {
+    color: red;
   }
 }
