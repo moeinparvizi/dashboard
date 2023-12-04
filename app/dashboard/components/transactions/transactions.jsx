@@ -1,8 +1,16 @@
+"use client"
+
+import { motion } from "framer-motion"
 import Image from "next/image"
 
 const Transactions = () => {
   return (
-    <div className="bg-bgDark p-5 rounded-lg">
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{type: "tween"}}
+      className="bg-bgDark p-5 rounded-lg"
+    >
       <div className="capitalize">latest transactions</div>
       <table className="w-full [&>tbody>tr>td]:p-[10px] [&>thead>tr>td]:p-[10px]">
         <thead>
@@ -28,7 +36,9 @@ const Transactions = () => {
               </div>
             </td>
             <td>
-              <span className="pending rounded-[5px] p-[5px] text-[14px]">pending</span>
+              <span className="pending rounded-[5px] p-[5px] text-[14px]">
+                pending
+              </span>
             </td>
             <td>07.02.2001</td>
             <td>$3000.2</td>
@@ -47,7 +57,9 @@ const Transactions = () => {
               </div>
             </td>
             <td>
-              <span className="done rounded-[5px] p-[5px] text-[14px]">done</span>
+              <span className="done rounded-[5px] p-[5px] text-[14px]">
+                done
+              </span>
             </td>
             <td>07.02.2001</td>
             <td>$3000.2</td>
@@ -66,7 +78,9 @@ const Transactions = () => {
               </div>
             </td>
             <td>
-              <span className="cancelled rounded-[5px] p-[5px] text-[14px]">cancelled</span>
+              <span className="cancelled rounded-[5px] p-[5px] text-[14px]">
+                cancelled
+              </span>
             </td>
             <td>07.02.2001</td>
             <td>$3000.2</td>
@@ -85,7 +99,9 @@ const Transactions = () => {
               </div>
             </td>
             <td>
-              <span className="pending rounded-[5px] p-[5px] text-[14px]">pending</span>
+              <span className="pending rounded-[5px] p-[5px] text-[14px]">
+                pending
+              </span>
             </td>
             <td>07.02.2001</td>
             <td>$3000.2</td>
@@ -104,14 +120,16 @@ const Transactions = () => {
               </div>
             </td>
             <td>
-              <span className="done rounded-[5px] p-[5px] text-[14px]">done</span>
+              <span className="done rounded-[5px] p-[5px] text-[14px]">
+                done
+              </span>
             </td>
             <td>07.02.2001</td>
             <td>$3000.2</td>
           </tr>
         </tbody>
       </table>
-    </div>
+    </motion.div>
   )
 }
 
