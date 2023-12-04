@@ -90,6 +90,25 @@ const Transactions = () => {
             <td>07.02.2001</td>
             <td>$3000.2</td>
           </tr>
+          <tr>
+            <td>
+              <div className="flex items-center gap-[10px]">
+                <Image
+                  height={40}
+                  width={40}
+                  alt="user"
+                  src="/noavatar.png"
+                  className="rounded-full object-cover"
+                />
+                moein parvizi
+              </div>
+            </td>
+            <td>
+              <span className="done rounded-[5px] p-[5px] text-[14px]">done</span>
+            </td>
+            <td>07.02.2001</td>
+            <td>$3000.2</td>
+          </tr>
         </tbody>
       </table>
     </div>
