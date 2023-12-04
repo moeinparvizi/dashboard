@@ -91,4 +91,13 @@ body {
   .percent-negative {
     color: red;
   }
+  .pending{
+    background-color: #f7cb7375;
+  }
+  .done{
+    background-color: #afd6ee75;
+  }
+  .cancelled{
+    background-color: #f7737375;
+  }
 }
