@@ -17,7 +17,7 @@ const data01 = [
 export default function Circlechart() {
   return (
     <div className="flex-[1] transition-all hover:flex-[5]">
-      <h3 className="capitalize">weekly recap</h3>
+      <h3 className="capitalize">group record</h3>
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={400} height={400}>
           <Pie
