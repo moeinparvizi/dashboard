@@ -3,6 +3,24 @@
 @tailwind components;
 @tailwind utilities;
 
+// import fonts
+@font-face {
+  font-family: poping-regular;
+  src: url('./fonts/Poppins-Regular.woff2');
+}
+@font-face {
+  font-family: poping-light;
+  src: url('./fonts/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: poping-semi;
+  src: url('./fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+  font-family: poping-medium;
+  src: url('./fonts/Poppins-Medium.ttf');
+}
+
 // remove default size
 *{
   margin: 0;
@@ -12,21 +30,44 @@
 
 // colors
 :root {
-  --bg: #03170d;
-  --bgLight: #051629;
+  --bg: #0c0614;
+  --bgLight: #431784;
+  --bgDark: #1C0B35;
   --text: #fafefd;
   --textHard: #e0e0e0;
-  --primary: #4fe3e8;
-  --accent: #1d77dd;
+  --primary: #b391e6;
+  --accent: #742ae4;
 }
 
 // body
 body {
   background-color: var(--bg);
   color: var(--text);
+  font-family: poping-regular;
 
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  h1{
+    font-family: poping-semi;
+  }
+
+  .sidebar-container {
+    height: calc(100vh - 40px);
+  }
+  .username {
+    font-family: poping-semi;
+  }
+  .sub-username {
+    font-family: poping-light;
+  }
+  .cat-title {
+    font-family: poping-semi;
   }
 }

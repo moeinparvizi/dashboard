@@ -1,89 +1,132 @@
+"use client"
+
+import Image from "next/image"
+import MenuLink from "./menuLink/menuLink"
+
 // import icons
 import {
   MdDashboard,
   MdSupervisedUserCircle,
   MdShoppingBag,
-  MdAttackMoney,
+  MdAttachMoney,
   MdWork,
   MdAnalytics,
   MdPeople,
   MdOutlineSettings,
   MdHelpCenter,
-} from 'react-icons/md'
+  // MdLogout,
+} from "react-icons/md"
+import { motion } from "framer-motion"
 
-const menuItem = [
+const menuItems = [
   {
-    title: 'pages',
+    title: "Pages",
     list: [
       {
-        title: 'dashboard',
-        path: '/dashboard',
-        icon: <MdDashboard />
+        title: "Dashboard",
+        path: "/dashboard",
+        icon: <MdDashboard />,
       },
       {
-        title: 'users',
-        path: '/dashboard/users',
-        icon: <MdSupervisedUserCircle />
+        title: "Users",
+        path: "/dashboard/users",
+        icon: <MdSupervisedUserCircle />,
       },
       {
-        title: 'products',
-        path: '/dashboard/products',
-        icon: <MdShoppingBag />
+        title: "Products",
+        path: "/dashboard/products",
+        icon: <MdShoppingBag />,
       },
       {
-        title: 'transactions',
-        path: '/dashboard/transactions',
-        icon: <MdAttackMoney />
-      }
-    ]
+        title: "Transactions",
+        path: "/dashboard/transactions",
+        icon: <MdAttachMoney />,
+      },
+    ],
   },
   {
-    title: 'analytics',
+    title: "Analytics",
     list: [
       {
-        title: 'revenue',
-        path: '/dashboard/revenue',
-        icon: <MdWork />
+        title: "Revenue",
+        path: "/dashboard/revenue",
+        icon: <MdWork />,
       },
       {
-        title: 'reports',
-        path: '/dashboard/reports',
-        icon: <MdAnalytics />
+        title: "Reports",
+        path: "/dashboard/reports",
+        icon: <MdAnalytics />,
       },
       {
-        title: 'teams',
-        path: '/dashboard/teams',
-        icon: <MdPeople />
-      }
-    ]
+        title: "Teams",
+        path: "/dashboard/teams",
+        icon: <MdPeople />,
+      },
+    ],
   },
   {
-    title: 'user',
+    title: "User",
     list: [
       {
-        title: 'settings',
-        path: '/dashboard/settings',
-        icon: <MdOutlineSettings />
+        title: "Settings",
+        path: "/dashboard/settings",
+        icon: <MdOutlineSettings />,
       },
       {
-        title: 'help',
-        path: '/dashboard/help',
-        icon: <MdHelpCenter />
-      }
-    ]
-  }
+        title: "Help",
+        path: "/dashboard/help",
+        icon: <MdHelpCenter />,
+      },
+    ],
+  },
 ]
 
 const Sidebar = () => {
+
   return (
-    <div>
+    <motion.div
+      initial={{ x: -300, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ type: "tween" }}
+      className="sticky top-10 bg-bgDark p-5 rounded-lg shadow-md shadow-bg-Light sidebar-container"
+    >
+      {/* user */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { delay: 0.4 } }}
+        className="flex gap-5 items-center mb-5"
+      >
+        <Image
+          width={50}
+          height={50}
+          alt="image"
+          src="/noavatar.png"
+          className="rounded-full object-cover"
+        />
+        {/* user Detail */}
+        <div className="flex flex-col">
+          <span className="username text-2x text-primary">
+            moein parvizi
+          </span>
+          <span className="sub-username text-sm">
+            administatrator
+          </span>
+        </div>
+      </motion.div>
       <ul>
-        {menuItem.map(item => (
-          <li key={item.title}>{item.title}</li>
+        {menuItems.map((cat) => (
+          <li key={cat.title}>
+            <span className="text-textHard text-[13px] my-[10px] cat-title">
+              {cat.title}
+            </span>
+            {cat.list.map((item) => (
+              <MenuLink item={item} key={item.title} />
+            ))}
+          </li>
         ))}
       </ul>
-    </div>
-  );
+    </motion.div>
+  )
 }
 
-export default Sidebar;
+export default Sidebar
