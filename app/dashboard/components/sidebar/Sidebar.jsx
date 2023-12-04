@@ -115,7 +115,7 @@ const Sidebar = () => {
       </motion.div>
       <ul>
         {menuItems.map((cat) => (
-          <li key={cat.title}>
+          <li className="flex flex-col gap-2" key={cat.title}>
             <span className="text-textHard text-[13px] my-[10px] cat-title">
               {cat.title}
             </span>

@@ -1,15 +1,16 @@
 // import { motion } from "framer-motion"
 import Link from "next/link"
-import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation"
 
 const MenuLink = ({ item }) => {
   const pathname = usePathname()
-  console.log(pathname);
 
   return (
     // container
       <Link
-        className="p-5 transition hover:bg-bgLight flex items-center gap-[10px] rounded-md"
+        className={`p-4 transition hover:bg-bgLight ${
+          pathname == item.path ? "bg-bgLight" : ""
+        } flex items-center gap-[10px] rounded-md`}
         href={item.path}
       >
         {item.icon}
