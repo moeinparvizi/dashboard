@@ -88,7 +88,7 @@ const Sidebar = () => {
       initial={{ x: -300, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ type: "tween" }}
-      className="sticky top-10 bg-bgDark p-5 rounded-lg shadow-md shadow-bg-Light sidebar-container"
+      className="sticky top-5 bg-bgDark p-5 rounded-lg shadow-md shadow-bg-Light sidebar-container overflow-y-scroll no-scrollbar"
     >
       {/* user */}
       <motion.div

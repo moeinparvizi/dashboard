@@ -91,13 +91,18 @@ body {
   .percent-negative {
     color: red;
   }
-  .pending{
+  .pending {
     background-color: #f7cb7375;
   }
-  .done{
+  .done {
     background-color: #afd6ee75;
   }
-  .cancelled{
+  .cancelled {
     background-color: #f7737375;
   }
+}
+
+// remove scrollbar
+.no-scrollbar {
+  &::-webkit-scrollbar {display: none}
 }
