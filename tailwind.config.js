@@ -13,7 +13,8 @@ module.exports = {
       'text': '#fafefd',
       'textHard': '#e0e0e0',
       'primary': '#b391e6',
-      'accent': '#742ae4'
+      'accent': '#742ae4',
+      'transparent': 'transparent'
     },
     extend: {}
   },

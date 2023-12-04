@@ -1,4 +1,4 @@
-// import { motion } from "framer-motion"
+import { motion } from "framer-motion"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
@@ -7,6 +7,7 @@ const MenuLink = ({ item }) => {
 
   return (
     // container
+    <motion.div whileTap={{scale:0.9}}>
       <Link
         className={`p-4 transition hover:bg-bgLight ${
           pathname == item.path ? "bg-bgLight" : ""
@@ -16,6 +17,7 @@ const MenuLink = ({ item }) => {
         {item.icon}
         {item.title}
       </Link>
+</motion.div>
   )
 }
 

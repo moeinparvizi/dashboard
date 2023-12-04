@@ -58,16 +58,28 @@ body {
     font-family: poping-semi;
   }
 
+  label {
+    background-color: #43178459;
+    display: flex;
+    align-items: center;
+
+    input{
+      &:focus{
+        outline: none;
+      }
+      &::placeholder{
+        font-size: 13px;
+      }
+    }
+  }
+
   .sidebar-container {
     height: calc(100vh - 40px);
   }
-  .username {
+  .username,.pathname,.cat-title {
     font-family: poping-semi;
   }
   .sub-username {
     font-family: poping-light;
-  }
-  .cat-title {
-    font-family: poping-semi;
   }
 }
