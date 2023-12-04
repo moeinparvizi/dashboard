@@ -14,6 +14,7 @@ import {
   MdPeople,
   MdOutlineSettings,
   MdHelpCenter,
+  MdLogout,
   // MdLogout,
 } from "react-icons/md"
 import { motion } from "framer-motion"
@@ -82,7 +83,6 @@ const menuItems = [
 ]
 
 const Sidebar = () => {
-
   return (
     <motion.div
       initial={{ x: -300, opacity: 0 }}
@@ -125,6 +125,14 @@ const Sidebar = () => {
           </li>
         ))}
       </ul>
+      <motion.div
+        whileTap={{scale:0.9}}
+        whileHover={{scale:1.1}}
+        className="capitalize bg-primary hover:bg-accent hover:text-text text-bg mt-2 flex items-center p-3 rounded-md gap-2"
+      >
+        <MdLogout />
+        logout
+      </motion.div>
     </motion.div>
   )
 }
