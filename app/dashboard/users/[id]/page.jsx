@@ -13,7 +13,7 @@ const SingleUserPage = () => {
     >
       <div className="flex-1 bg-bgDark h-max rounded-md p-5 font-bold">
         <div className="w-full h-[300px] relative rounded-md overflow-hidden mb-5 text-textHard">
-          <Image src={"/noavatar.png"} alt="" fill />
+          <Image src={"/me.jpeg"} alt="" fill />
         </div>
         moein parvizi
       </div>

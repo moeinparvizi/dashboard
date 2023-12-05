@@ -44,9 +44,9 @@ const UsersPage = () => {
                 <Image
                   width={40}
                   height={40}
-                  className="rounded-full object-cover"
+                  className="rounded-full object-cover w-[40px] h-[40px] bg-top"
                   alt="nothing"
-                  src="/noavatar.png"
+                  src="/me.jpeg"
                 />
                 moein parvizi
               </figure>

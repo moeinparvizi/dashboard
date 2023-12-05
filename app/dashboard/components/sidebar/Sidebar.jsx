@@ -100,8 +100,8 @@ const Sidebar = () => {
           width={50}
           height={50}
           alt="image"
-          src="/noavatar.png"
-          className="rounded-full object-cover"
+          src="/me.jpeg"
+          className="rounded-full w-12 h-12 object-cover bg-top"
         />
         {/* user Detail */}
         <div className="flex flex-col">
