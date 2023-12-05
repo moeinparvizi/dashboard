@@ -2,7 +2,7 @@ const Pagination = () => {
   return (
     <div className="w-full flex justify-between items-center mt-3">
       <button
-        className="capitalize transition-all hover:bg-accent rounded-md p-3 bg-primary opacity-75"
+        className="capitalize transition-all hover:bg-accent rounded-md p-3 bg-primary opacity-50"
         disabled
       >
         previous
