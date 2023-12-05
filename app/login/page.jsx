@@ -21,7 +21,7 @@ const Login = () => {
           initial={{ y: 100, scale: 2 }}
           animate={{ y: 0, scale: 1 }}
           transition={{ delay: 1 }}
-          className="text-center font-bold text-2xl"
+          className="text-center font-bold text-2xl capitalize"
         >
           login
         </motion.h2>

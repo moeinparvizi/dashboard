@@ -72,7 +72,7 @@ body {
       }
     }
   }
-  input {
+  input,textarea,select {
     transition: 0.4s;
     &:focus {
       outline: none;
