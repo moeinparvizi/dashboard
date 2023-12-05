@@ -18,6 +18,8 @@ import {
   // MdLogout,
 } from "react-icons/md"
 import { motion } from "framer-motion"
+import { redirect } from "next/dist/server/api-utils"
+import { useRouter } from "next/navigation"
 
 const menuItems = [
   {
@@ -83,6 +85,8 @@ const menuItems = [
 ]
 
 const Sidebar = () => {
+  const {push} = useRouter()
+
   return (
     <motion.div
       initial={{ x: -300, opacity: 0 }}
@@ -129,6 +133,7 @@ const Sidebar = () => {
         whileTap={{scale:0.9}}
         whileHover={{scale:1.1}}
         className="capitalize bg-primary hover:bg-accent hover:text-text text-bg mt-2 flex items-center p-3 rounded-md gap-2"
+        onClick={() => push('/')}
       >
         <MdLogout />
         logout

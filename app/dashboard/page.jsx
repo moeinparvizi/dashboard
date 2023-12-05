@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Card from "./components/card/card";
 import Chart from "./components/chart/chart";
 import Rightbar from "./components/rightbar/right";
@@ -12,8 +13,8 @@ const Dashboard = () => {
           <Card percent={24} number={"14.6"} />
           <Card percent={6} number={"9.071"} />
         </div>
-        <Transactions />
         <Chart />
+        <Transactions />
       </div>
       <div className="flex-1">
         <Rightbar />
