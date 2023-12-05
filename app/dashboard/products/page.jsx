@@ -16,7 +16,7 @@ const UsersPage = () => {
     >
       <div className="flex justify-between items-center">
         <Search placeholder="use search" />
-        <Link href="/dashboard/users/add">
+        <Link href="/dashboard/products/add">
           <motion.button
             whileTap={{ scale: 0.9 }}
             whileHover={{ scale: 1.05 }}
