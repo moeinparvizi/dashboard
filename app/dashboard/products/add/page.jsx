@@ -25,6 +25,7 @@ const AddProductPage = () => {
             className="capitalize"
             value="general"
             disabled
+            selected
           >
             choose a category
           </option>

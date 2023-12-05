@@ -25,7 +25,7 @@ const AddUserPage = () => {
           className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
         />
         <input
-          type="number"
+          type="phone"
           placeholder="phone"
           name="phone"
           required
@@ -43,13 +43,18 @@ const AddUserPage = () => {
           name="cat"
           id="cat"
         >
-          <option className="capitalize" value="general">
+          <option
+            disabled
+            selected
+            className="capitalize"
+            value={false}
+          >
             is admin?
           </option>
-          <option className="capitalize" value="phone">
+          <option className="capitalize" value={true}>
             yes
           </option>
-          <option className="capitalize" value="computer">
+          <option className="capitalize" value={false}>
             no
           </option>
         </select>
@@ -58,13 +63,18 @@ const AddUserPage = () => {
           name="cat"
           id="cat"
         >
-          <option className="capitalize" value="general">
+          <option
+            disabled
+            selected
+            className="capitalize"
+            value={true}
+          >
             is active?
           </option>
-          <option className="capitalize" value="kitchen">
+          <option className="capitalize" value={true}>
             yes
           </option>
-          <option className="capitalize" value="phone">
+          <option className="capitalize" value={false}>
             no
           </option>
         </select>
@@ -73,7 +83,7 @@ const AddUserPage = () => {
           name="address"
           id="address"
           rows="11"
-          placeholder="Description"
+          placeholder="address"
           className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-full"
         ></textarea>
         <button
