@@ -1,4 +1,4 @@
-const AddProductPage = () => {
+const AddUserPage = () => {
   return (
     <div className="p-5 w-full bg-bgDark rounded-lg mt-5">
       <form
@@ -11,9 +11,31 @@ const AddProductPage = () => {
       >
         <input
           type="text"
-          placeholder="title"
-          name="title"
+          placeholder="username"
+          name="username"
           required
+          className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
+        />
+        <input
+          type="email"
+          id="email"
+          placeholder="email"
+          name="price"
+          required
+          className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
+        />
+        <input
+          type="number"
+          placeholder="phone"
+          name="phone"
+          required
+          className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
+        />
+        <input
+          type="password"
+          id="password"
+          placeholder="password"
+          name="color"
           className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
         />
         <select
@@ -21,56 +43,35 @@ const AddProductPage = () => {
           name="cat"
           id="cat"
         >
-          <option
-            className="capitalize"
-            value="general"
-            disabled
-          >
-            choose a category
-          </option>
-          <option className="capitalize" value="kitchen">
-            kitchen
+          <option className="capitalize" value="general">
+            is admin?
           </option>
           <option className="capitalize" value="phone">
-            phone
+            yes
           </option>
           <option className="capitalize" value="computer">
-            computer
+            no
           </option>
         </select>
-        <input
-          type="number"
-          id="price"
-          placeholder="price"
-          name="price"
-          required
+        <select
           className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
-        />
-        <input
-          type="number"
-          placeholder="stock"
-          name="stock"
-          required
-          className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
-        />
-        <input
-          type="text"
-          id="color"
-          placeholder="color"
-          name="color"
-          className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
-        />
-        <input
-          type="text"
-          placeholder="size"
-          id="size"
-          name="size"
-          className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-[45%]"
-        />
+          name="cat"
+          id="cat"
+        >
+          <option className="capitalize" value="general">
+            is active?
+          </option>
+          <option className="capitalize" value="kitchen">
+            yes
+          </option>
+          <option className="capitalize" value="phone">
+            no
+          </option>
+        </select>
         <textarea
           required
-          name="desc"
-          id="desc"
+          name="address"
+          id="address"
           rows="11"
           placeholder="Description"
           className="p-5 bg-[#43178459] text-text rounded-md mb-[30px] w-full"
@@ -86,4 +87,4 @@ const AddProductPage = () => {
   )
 }
 
-export default AddProductPage
+export default AddUserPage
