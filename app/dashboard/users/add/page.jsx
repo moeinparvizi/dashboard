@@ -1,6 +1,15 @@
+"use client"
+
+import { motion } from "framer-motion"
+
 const AddUserPage = () => {
   return (
-    <div className="p-5 w-full bg-bgDark rounded-lg mt-5">
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{type: "tween"}}
+      className="p-5 w-full bg-bgDark rounded-lg mt-5"
+    >
       <form
         action=""
         className="
@@ -93,7 +102,7 @@ const AddUserPage = () => {
           Submit
         </button>
       </form>
-    </div>
+    </motion.div>
   )
 }
 

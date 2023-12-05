@@ -57,7 +57,7 @@ const UsersPage = () => {
             <td className="capitalize">active</td>
             <td>
               <div className="flex gap-[10px]">
-                <Link href="/">
+                <Link href="/dashboard/users/test">
                   <button className="px-[10px] py-[5px] rounded-md text-text border-none bg-[teal]">view</button>
                 </Link>
                 <button className="px-[10px] py-[5px] rounded-md text-text border-none bg-[crimson]">delete</button>
