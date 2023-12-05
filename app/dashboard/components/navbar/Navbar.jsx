@@ -33,8 +33,7 @@ const Navbar = () => {
           htmlFor="search"
         >
           <MdSearch size={20} />
-          <motion.input
-          whileFocus={{scale:1.1}}
+          <input
             placeholder="search"
             id="search"
             name="search"

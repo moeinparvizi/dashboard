@@ -72,6 +72,16 @@ body {
       }
     }
   }
+  input {
+    transition: 0.4s;
+    &:focus {
+      outline: none;
+      scale: 1.03;
+    }
+    &::placeholder {
+      font-size: 13px;
+    }
+  }
 
   .sidebar-container {
     height: calc(100vh - 40px);
@@ -104,5 +114,7 @@ body {
 
 // remove scrollbar
 .no-scrollbar {
-  &::-webkit-scrollbar {display: none}
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
