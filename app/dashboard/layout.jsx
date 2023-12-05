@@ -1,3 +1,4 @@
+import Footer from "./components/footer/footer"
 import Navbar from "./components/navbar/Navbar"
 import Sidebar from "./components/sidebar/Sidebar"
 
@@ -13,6 +14,7 @@ const layout = ({ children }) => {
       <div className="flex-[4] p-5">
         <Navbar />
         {children}
+        <Footer />
       </div>
     </div>
   )
