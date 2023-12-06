@@ -7,7 +7,7 @@ const MenuLink = ({ item }) => {
 
   return (
     // container
-    <motion.div whileTap={{scale:0.9}}>
+    <motion.div whileTap={{scale:0.9}} className="">
       <Link
         className={`p-4 transition hover:bg-bgLight ${
           pathname == item.path ? "bg-bgLight" : ""

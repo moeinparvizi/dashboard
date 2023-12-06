@@ -1,8 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import MenuLink from "./menuLink/menuLink"
-import MobileMenu from "./mobile/mobileMenu"
+import MenuLink from "../menuLink/menuLink"
 
 // import icons
 import {
@@ -16,10 +15,14 @@ import {
   MdOutlineSettings,
   MdHelpCenter,
   MdLogout,
+  MdClose,
+  MdMenu,
   // MdLogout,
 } from "react-icons/md"
+
 import { motion } from "framer-motion"
 import { useRouter } from "next/navigation"
+import { useRef } from "react"
 
 const menuItems = [
   {
@@ -83,20 +86,32 @@ const menuItems = [
     ],
   },
 ]
-
-const Sidebar = () => {
+const SidebarMobile = () => {
   const { push } = useRouter()
+  const ref = useRef()
+
+  const toggleMenu = () =>
+    ref.current.classList.toggle("top-[-2000px]")
 
   return (
     <>
-      {/* mobile menu */}
-      <MobileMenu />
+      <MdMenu
+        size={40}
+        className="fixed top-1 left-1 bg-bgDark p-2 rounded-full"
+        onClick={toggleMenu}
+      />
       <motion.div
+        ref={ref}
         initial={{ x: -300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ type: "tween" }}
-        className="sticky hidden md:flex flex-col top-5 bg-bgDark p-5 rounded-lg shadow-md shadow-bg-Light sidebar-container overflow-y-scroll no-scrollbar"
+        transition={{ type: "tween", duration: 1 }}
+        className="fixed transition-all top-0 left-0 flex md:hidden flex-col h-screen w-screen bg-bgDark p-5 overflow-y-scroll no-scrollbar"
       >
+        <MdClose
+          onClick={toggleMenu}
+          size={24}
+          className="m-5 absolute left-[80%]"
+        />
         {/* user */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -149,4 +164,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default SidebarMobile
