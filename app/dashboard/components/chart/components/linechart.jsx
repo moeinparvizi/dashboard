@@ -58,7 +58,7 @@ const data = [
 
 export default function Linechart() {
   return (
-    <div className="flex-[2]">
+    <div className="md:flex-[2] w-full md:w-auto max-h-[450px]">
       <h3 className="capitalize">weekly recap</h3>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart

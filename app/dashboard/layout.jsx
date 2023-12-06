@@ -7,7 +7,7 @@ const layout = ({ children }) => {
     // container
     <div className="flex">
       {/* menu */}
-      <div className="flex-1 p-5">
+      <div className="md:flex-1 md:p-5">
         <Sidebar />
       </div>
       {/* contents */}

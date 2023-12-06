@@ -16,10 +16,10 @@ const data01 = [
 
 export default function Circlechart() {
   return (
-    <div className="flex-[1] transition-all hover:flex-[5]">
+    <div className="md:flex-[1] w-full md:w-auto transition-all md:hover:flex-[5] max-h-[450px]">
       <h3 className="capitalize">group record</h3>
       <ResponsiveContainer width="100%" height="100%">
-        <PieChart width={400} height={400}>
+        <PieChart className="w-40 h-40">
           <Pie
             dataKey="value"
             isAnimationActive={true}
