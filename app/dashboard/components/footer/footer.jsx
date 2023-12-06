@@ -8,12 +8,12 @@ const Footer = () => {
     <motion.footer
       initial={{ y: -100 }}
       whileInView={{ y: 0 }}
-      className="flex justify-between  mt-7 text-textHard items-center bg-bgDark p-5 rounded-lg"
+      className="flex justify-between mt-7 text-textHard items-center bg-bgDark p-5 rounded-lg"
     >
       <div className="flex gap-2 items-center">
         create by
         <Link
-          className="font-semibold text-lg text-accent"
+          className="font-semibold md:text-lg text-accent"
           href="https://linkedin.com/in/moeinparvizi2002"
         >
           moein parvizi

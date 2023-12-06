@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <div className="2xl:max-w-[2200px]">{children}</div>
+        <main className="2xl:max-w-[2200px]">{children}</main>
       </body>
     </html>
   )
