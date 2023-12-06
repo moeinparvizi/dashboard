@@ -94,7 +94,7 @@ const SidebarMobile = () => {
     ref.current.classList.toggle("top-[-2000px]")
 
   return (
-    <>
+    <div className="flex md:hidden">
       <MdMenu
         size={40}
         className="fixed top-1 left-1 bg-bgDark p-2 rounded-full"
@@ -105,7 +105,7 @@ const SidebarMobile = () => {
         initial={{ x: -300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "tween", duration: 1 }}
-        className="fixed transition-all top-0 left-0 flex md:hidden flex-col h-screen w-screen bg-bgDark p-5 overflow-y-scroll no-scrollbar"
+        className="fixed transition-all top-0 left-0 flex flex-col h-screen w-screen bg-bgDark p-5 overflow-y-scroll no-scrollbar"
       >
         <MdClose
           onClick={toggleMenu}
@@ -160,7 +160,7 @@ const SidebarMobile = () => {
           logout
         </motion.div>
       </motion.div>
-    </>
+    </div>
   )
 }
 
