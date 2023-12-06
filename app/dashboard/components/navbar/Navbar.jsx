@@ -19,7 +19,7 @@ const Navbar = () => {
       initial={{ y: -300, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "tween" }}
-      className="bg-bgDark p-5 rounded-lg flex items-center justify-between"
+      className="bg-bgDark p-2 md:p-5 rounded-lg flex flex-wrap md:flex-row items-center justify-between"
     >
       <span className="capitalize pathname">
         {pathname.split("/").pop()}
@@ -38,7 +38,7 @@ const Navbar = () => {
             id="search"
             name="search"
             type="text"
-            className="bg-transparent w-40"
+            className="bg-transparent w-32 md:w-40"
           />
         </motion.label>
         <div className="flex gap-3 [&>svg]:cursor-pointer">
