@@ -10,7 +10,7 @@ const Chart = () => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{type: "tween"}}
-      className="flex flex-wrap w-full gap-3 [&>div]:rounded-xl [&>div]:p-5 [&>div]:bg-bgDark"
+      className="flex flex-wrap w-full relative z-0 gap-3 [&>div]:rounded-xl [&>div]:p-5 [&>div]:bg-bgDark"
     >
       <Linechart />
       <Circlechart />

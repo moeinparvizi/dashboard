@@ -16,7 +16,7 @@ const Transactions = () => {
         <thead>
           <tr className="capitalize">
             <td>name</td>
-            <td>status</td>
+            <td className="hidden md:flex">status</td>
             <td>date</td>
             <td>amount</td>
           </tr>
@@ -35,7 +35,7 @@ const Transactions = () => {
                 moein parvizi
               </div>
             </td>
-            <td>
+            <td className="hidden md:flex">
               <span className="pending rounded-[5px] p-[5px] text-[14px]">
                 pending
               </span>
@@ -56,7 +56,7 @@ const Transactions = () => {
                 moein parvizi
               </div>
             </td>
-            <td>
+            <td className="hidden md:flex">
               <span className="done rounded-[5px] p-[5px] text-[14px]">
                 done
               </span>
@@ -77,7 +77,7 @@ const Transactions = () => {
                 moein parvizi
               </div>
             </td>
-            <td>
+            <td className="hidden md:flex">
               <span className="cancelled rounded-[5px] p-[5px] text-[14px]">
                 cancelled
               </span>
@@ -98,7 +98,7 @@ const Transactions = () => {
                 moein parvizi
               </div>
             </td>
-            <td>
+            <td className="hidden md:flex">
               <span className="pending rounded-[5px] p-[5px] text-[14px]">
                 pending
               </span>
@@ -119,7 +119,7 @@ const Transactions = () => {
                 moein parvizi
               </div>
             </td>
-            <td>
+            <td className="hidden md:flex">
               <span className="done rounded-[5px] p-[5px] text-[14px]">
                 done
               </span>
