@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { redirect, useRouter } from "next/navigation"
-import { useEffect, useState } from "react"
+import { useRouter } from "next/navigation"
+import { useState } from "react"
 import toast, { Toaster } from "react-hot-toast"
 
 const Login = () => {
@@ -49,7 +49,7 @@ const Login = () => {
         }}
         // transition={{ delay: 1.5 }}
         action=""
-        className="rounded-lg p-[50px] w-[500px] h-[500px] flex flex-col justify-center gap-7"
+        className="rounded-lg p-[50px] w-screen h-screen md:w-[500px] md:h-[500px] flex flex-col justify-center gap-7 relative"
       >
         <motion.h2
           initial={{ y: 100, scale: 2 }}
