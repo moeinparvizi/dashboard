@@ -11,7 +11,7 @@ const Card = ({ percent, number }) => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "tween" }}
-      className="bg-bgDark rounded-md p-5 flex gap-5 cursor-pointer hover:bg-accent"
+      className="bg-bgDark rounded-md p-5 w-full md:w-auto flex gap-5 cursor-pointer hover:bg-accent"
     >
       <MdSupervisedUserCircle size={24} />
       <div className="flex flex-col gap-5">
