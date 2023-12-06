@@ -9,20 +9,21 @@ const SingleProductPage = () => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{type: "tween"}}
-      className="flex gap-[50px] mt-5"
+      className="flex flex-wrap justify-center md:justify-start gap-[50px] mt-5"
     >
-      <div className="flex-1 bg-bgDark h-max rounded-md p-5 font-bold">
+      <div className="flex-1 bg-bgDark h-max rounded-md p-2 md:p-5 font-bold">
         <div className="w-full h-[300px] relative rounded-md overflow-hidden mb-5 text-textHard">
           <Image src={"/noproduct.jpg"} alt="" fill />
         </div>
         iphone 16 pro max
       </div>
-      <div className="flex-[3] bg-bgDark rounded-md p-5">
+      <div className="md:flex-[3] bg-bgDark rounded-md p-2 md:p-5">
         <form
           action={""}
           className="
           flex
-          flex-col gap-5
+          flex-col
+          gap-5
           [&>input]:p-[10px]
           [&>input]:rounded-md
           [&>input]:bg-[#43178459]

@@ -24,7 +24,7 @@ const NotFoundPage = () => {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "tween" }}
-          className="bg-bgDark p-5 md:p-[50px] rounded-lg text-text text-[40px] md:text-[70px] mt-5 flex flex-col md:justify-center md:items-center"
+          className="bg-bgDark p-5 md:p-[50px] rounded-lg text-text text-[20px] md:text-[70px] mt-5 flex flex-col md:justify-center md:items-center"
         >
           <div className="text-primary flex gap-2 items-center justify-center">
             <FaFaceSadCry />
