@@ -4,7 +4,7 @@ import { MdPlayCircleFilled, MdReadMore } from "react-icons/md"
 const Rightbar = () => {
 
   return (
-    <div className="fixed pe-5">
+    <div className="fixed hidden md:flex flex-wrap md:pe-5">
       <div className="p-5 rounded-lg mb-5 relative bg-gradient-to-b from-bgDark to-bg">
         <div className="absolute right-0 bottom-0 w-1/2 h-1/2">
           <Image

@@ -6,8 +6,8 @@ import Transactions from "./components/transactions/transactions";
 
 const Dashboard = () => {
   return (
-    <div className="flex gap-5 mt-5">
-      <div className="flex-[3] flex flex-col gap-5">
+    <div className="flex md:gap-5 mt-5">
+      <div className="md:flex-[3] flex flex-col gap-5">
         <div className="flex flex-wrap gap-5 justify-between">
           <Card percent={-12} number={"10.276"} />
           <Card percent={24} number={"14.6"} />
@@ -16,7 +16,7 @@ const Dashboard = () => {
         <Chart />
         <Transactions />
       </div>
-      <div className="flex-1">
+      <div className="md:flex-1">
         <Rightbar />
       </div>
     </div>
