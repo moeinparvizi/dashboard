@@ -12,9 +12,9 @@ const UsersPage = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "tween" }}
-      className="bg-bgDark rounded-lg mt-5 p-5"
+      className="bg-bgDark rounded-lg mt-5 p-1 md:p-5 text-[10px] md:text-[16px]"
     >
-      <div className="flex justify-between items-center">
+      <div className="flex flex-wrap justify-between items-center">
         <Search placeholder="use search" />
         <Link href="/dashboard/products/add">
           <motion.button
@@ -26,7 +26,7 @@ const UsersPage = () => {
           </motion.button>
         </Link>
       </div>
-      <table className="w-full [&>tbody>tr>td]:p-[10px] [&>thead>tr>td]:p-[10px]">
+      <table className="w-full my-5 [&>tbody>tr>td]:p-[2px] [&>tbody>tr>td]:md:p-[10px] [&>thead>tr>td]:p-[2px] [&>thead>tr>td]:md:p-[10px]">
         <thead>
           <tr className="[&>td]:capitalize text-semibold">
             <td>title</td>
@@ -40,7 +40,7 @@ const UsersPage = () => {
         <tbody>
           <tr>
             <td>
-              <figure className="flex gap-[10px] items-center">
+              <figure className="flex flex-wrap gap-[10px] items-center">
                 <Image
                   width={40}
                   height={40}
@@ -56,7 +56,7 @@ const UsersPage = () => {
             <td className="capitalize">oct 28 2023</td>
             <td className="capitalize">34</td>
             <td>
-              <div className="flex gap-[10px]">
+              <div className="flex flex-wrap gap-[10px]">
                 <Link href="/dashboard/products/test">
                   <button className="px-[10px] py-[5px] rounded-md text-text border-none bg-[teal]">view</button>
                 </Link>

@@ -4,7 +4,7 @@ const Search = ({ placeholder }) => {
   return (
     <label
       htmlFor="searching"
-      className="gap-[10px] rounded-md w-max p-[10px]"
+      className="gap-[10px] rounded-md md:w-max p-[10px]"
     >
       <MdSearch size={24} />
       <input

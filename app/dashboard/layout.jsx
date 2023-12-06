@@ -11,7 +11,7 @@ const layout = ({ children }) => {
         <Sidebar />
       </div>
       {/* contents */}
-      <div className="flex-[4] p-5">
+      <div className="flex-[4] p-2 md:p-5">
         <Navbar />
         {children}
         <Footer />
